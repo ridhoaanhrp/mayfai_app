@@ -32,6 +32,7 @@ dependencies:
     sdk: flutter
   google_fonts: ^2.3.1
   iconify_flutter: ^0.0.4
+  syncfusion_flutter_charts: ^20.1.48
 
 dev_dependencies:
   flutter_lints: ^1.0.0
@@ -54,6 +55,9 @@ flutter:
     - Images/LoginScreen/loginScreenBg.png
     - Images/LoginScreen/mayfaiLogo.png
     - Images/RegisterScreen/registerScreenBg.png
+    - Images/AppBar/avatar.png
+    - Images/DiscoverImage/discoverImage1.png
+    - Images/DiscoverImage/discoverImage2.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
