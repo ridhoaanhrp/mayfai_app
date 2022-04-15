@@ -12,7 +12,22 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  PageController pageController = PageController();
   int selectedIndex = 0;
+  void navBarTap(int index) {
+    setState(() {
+      selectedIndex = index;
+      pageController.animateToPage(index,
+          duration: const Duration(milliseconds: 300), curve: Curves.bounceOut);
+    });
+  }
+
+  void pageChanged(int index) {
+    setState(() {
+      selectedIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     double bodyHeight = MediaQuery.of(context).size.height -

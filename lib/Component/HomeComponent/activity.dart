@@ -21,7 +21,7 @@ class _ActivityState extends State<Activity> {
 
     return Container(
       width: bodyWidth,
-      height: bodyWidth * 0.6,
+      height: bodyHeight * 0.3,
       padding: EdgeInsets.only(
           top: bodyHeight * 0.05,
           left: bodyWidth * 0.05,
