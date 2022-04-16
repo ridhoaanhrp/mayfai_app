@@ -5,8 +5,11 @@ import 'package:iconify_flutter/icons/bxs.dart';
 import 'package:iconify_flutter/icons/fluent.dart';
 import 'package:iconify_flutter/icons/healthicons.dart';
 import 'package:iconify_flutter/icons/ph.dart';
+import 'package:mayfai_app/Component/Page%20Transition/slide_transition.dart';
+import 'package:mayfai_app/Screens/Activity%20Screen/activity_screen.dart';
 import 'package:mayfai_app/Screens/Discover%20Screen/discover_screen.dart';
 import 'package:mayfai_app/Screens/Home%20Screen/home_screen.dart';
+import 'package:mayfai_app/Screens/Wallet%20Screen/wallet_screen.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({Key? key}) : super(key: key);
@@ -17,7 +20,7 @@ class NavBar extends StatefulWidget {
 
 class _MainHomeState extends State<NavBar> {
   int selectedIndex = 0;
-  final screens = [HomeScreen(), DiscoverScreen()];
+  final screens = [HomeScreen(), DiscoverScreen(), ActivityScreen()];
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -28,7 +31,10 @@ class _MainHomeState extends State<NavBar> {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+                context, SlideRightRoute(page: const WalletScreen()));
+          },
           backgroundColor: Colors.white,
           child: const Iconify(
             Fluent.wallet_credit_card_20_filled,

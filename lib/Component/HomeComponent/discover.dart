@@ -104,8 +104,13 @@ class _DiscoverListState extends State<DiscoverList> {
                                         height: bodyHeight * 0.01,
                                       ),
                                       Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
                                         children: [
                                           discoverModel.icon,
+                                          SizedBox(
+                                            width: bodyWidth * 0.01,
+                                          ),
                                           Text(
                                             discoverModel.time,
                                             style: GoogleFonts.poppins(

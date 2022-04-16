@@ -36,7 +36,7 @@ var discoverList = [
       icon: const Iconify(
         Carbon.time,
         color: Colors.blue,
-        size: 20,
+        size: 15,
       ),
       time: "4 Jam yang Lalu"),
   DiscoverModel(
@@ -48,7 +48,7 @@ var discoverList = [
       icon: const Iconify(
         Carbon.time,
         color: Colors.blue,
-        size: 20,
+        size: 15,
       ),
       time: "5 Jam yang Lalu"),
 ];
@@ -123,7 +123,7 @@ var economyDiscoverList = [
       icon: const Iconify(
         Carbon.time,
         color: Colors.blue,
-        size: 20,
+        size: 15,
       ),
       time: "5 Jam yang Lalu"),
 ];
