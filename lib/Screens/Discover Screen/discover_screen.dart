@@ -46,7 +46,7 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
               width: bodyWidth,
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                  children: const [
                     TitleScreen(),
                     NewsOfToday(),
                     PopularNews(),

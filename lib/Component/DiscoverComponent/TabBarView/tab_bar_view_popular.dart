@@ -68,6 +68,9 @@ class _TabBarViewPopularState extends State<TabBarViewPopular> {
                             Row(
                               children: [
                                 discoverModel.icon,
+                                SizedBox(
+                                  width: bodyWidth * 0.01,
+                                ),
                                 Text(
                                   discoverModel.time,
                                   style: GoogleFonts.poppins(

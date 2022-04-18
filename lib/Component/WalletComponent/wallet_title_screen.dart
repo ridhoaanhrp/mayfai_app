@@ -4,8 +4,8 @@ import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/bi.dart';
 import 'package:mayfai_app/app_bar.dart';
 
-class ActivityTitleScreen extends StatelessWidget {
-  const ActivityTitleScreen({Key? key}) : super(key: key);
+class WalletTitleScreen extends StatelessWidget {
+  const WalletTitleScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,23 +29,19 @@ class ActivityTitleScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Activity",
+                  "Wallet",
                   style: GoogleFonts.poppins(
                       textStyle: const TextStyle(
                           fontSize: 18,
                           color: Colors.black,
                           fontWeight: FontWeight.w600)),
                 ),
-                const Iconify(
-                  Bi.calendar_date_fill,
-                  color: Color(0xFF20A0FD),
-                )
               ],
             ),
           ),
           Expanded(
             child: Text(
-              "Informasi mengenai kegiatan keseharian kamu!",
+              "Lampiran informasi dan statistik keuangan kamu!",
               style: GoogleFonts.poppins(
                   textStyle: const TextStyle(
                       fontSize: 12,

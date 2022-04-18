@@ -106,6 +106,9 @@ class _PopularNewsState extends State<PopularNews> {
                                       Row(
                                         children: [
                                           discoverModel.icon,
+                                          SizedBox(
+                                            width: bodyWidth * 0.01,
+                                          ),
                                           Text(
                                             discoverModel.time,
                                             style: GoogleFonts.poppins(

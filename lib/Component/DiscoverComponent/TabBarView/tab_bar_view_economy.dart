@@ -68,6 +68,9 @@ class _TabBarViewEconomyState extends State<TabBarViewEconomy> {
                             Row(
                               children: [
                                 discoverModel.icon,
+                                SizedBox(
+                                  width: bodyWidth * 0.01,
+                                ),
                                 Text(
                                   discoverModel.time,
                                   style: GoogleFonts.poppins(
