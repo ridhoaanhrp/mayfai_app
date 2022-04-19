@@ -85,7 +85,7 @@ class _OtherNewsState extends State<OtherNews>
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   TabBar(
-                      labelColor: Color(0xFF20A0FD),
+                      labelColor: const Color(0xFF20A0FD),
                       unselectedLabelColor: Colors.grey,
                       labelStyle: GoogleFonts.poppins(
                           textStyle: const TextStyle(

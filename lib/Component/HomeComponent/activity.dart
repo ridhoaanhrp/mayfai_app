@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:mayfai_app/Model/activity_model.dart';
 import 'package:mayfai_app/app_bar.dart';
 
@@ -15,7 +14,7 @@ class _ActivityState extends State<Activity> {
   @override
   Widget build(BuildContext context) {
     double bodyHeight = MediaQuery.of(context).size.height -
-        MayfaiAppBar().preferredSize.height -
+        const MayfaiAppBar().preferredSize.height -
         MediaQuery.of(context).padding.top;
     double bodyWidth = MediaQuery.of(context).size.width;
 

@@ -31,21 +31,25 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     double bodyHeight = MediaQuery.of(context).size.height -
-        MayfaiAppBar().preferredSize.height -
+        const MayfaiAppBar().preferredSize.height -
         MediaQuery.of(context).padding.top;
     double bodyWidth = MediaQuery.of(context).size.width;
 
     return Material(
       child: Scaffold(
         resizeToAvoidBottomInset: false,
-        appBar: MayfaiAppBar(),
+        appBar: const MayfaiAppBar(),
         body: SafeArea(
             child: SingleChildScrollView(
           child: Container(
             width: bodyWidth,
             height: bodyHeight * 1.065,
             child: Column(
-              children: [Activity(), FinanceInformation(), DiscoverList()],
+              children: const [
+                Activity(),
+                FinanceInformation(),
+                DiscoverList()
+              ],
             ),
           ),
         )),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mayfai_app/Component/Page%20Transition/slide_transition.dart';
+import 'package:mayfai_app/nav_bar.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -194,7 +196,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         width: bodyWidth * 0.9,
                         height: bodyHeight * 0.06,
                         child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(context,
+                                  SlideRightRoute(page: const NavBar()));
+                            },
                             style: ButtonStyle(
                                 shape: MaterialStateProperty.all<
                                         RoundedRectangleBorder>(

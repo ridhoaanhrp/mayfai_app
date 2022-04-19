@@ -7,6 +7,7 @@ class MayfaiAppBar extends StatelessWidget implements PreferredSizeWidget {
   const MayfaiAppBar({Key? key}) : super(key: key);
 
   @override
+  // ignore: todo
   // TODO: implement preferredSize
   Size get preferredSize => const Size(double.infinity, 85);
   @override

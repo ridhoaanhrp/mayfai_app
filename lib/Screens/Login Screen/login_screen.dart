@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mayfai_app/Component/Page%20Transition/slide_transition.dart';
+import 'package:mayfai_app/Screens/Register%20Screen/register_screen.dart';
+import 'package:mayfai_app/nav_bar.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -124,7 +126,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     width: bodyWidth * 0.9,
                     height: bodyHeight * 0.06,
                     child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context, SlideRightRoute(page: const NavBar()));
+                        },
                         style: ButtonStyle(
                             shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
@@ -154,7 +159,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       GestureDetector(
                           onTap: () {
                             Navigator.push(context,
-                                SlideRightRoute(page: const LoginScreen()));
+                                SlideRightRoute(page: const RegisterScreen()));
                           },
                           child: Text(
                             "disini",

@@ -31,7 +31,7 @@ class _ActivityScreenState extends State<ActivityScreen> {
   @override
   Widget build(BuildContext context) {
     double bodyHeight = MediaQuery.of(context).size.height -
-        MayfaiAppBar().preferredSize.height -
+        const MayfaiAppBar().preferredSize.height -
         MediaQuery.of(context).padding.top;
     double bodyWidth = MediaQuery.of(context).size.width;
 

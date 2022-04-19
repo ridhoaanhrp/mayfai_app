@@ -63,6 +63,8 @@ flutter:
     - Images/DiscoverImage/discoverImage5.png
     - Images/DiscoverImage/discoverImage6.png
     - Images/DiscoverImage/newsOfTodayImage.png
+    - Images/ProfileScreen/bgProfile.png
+    - Images/ProfileScreen/logoMayfai2.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
