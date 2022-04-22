@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mayfai_app/Component/ActivityComponent/activity_list.dart';
-import 'package:mayfai_app/Component/ActivityComponent/activity_per_day.dart';
+import 'package:mayfai_app/Component/ActivityComponent/activity_list_revision.dart';
+import 'package:mayfai_app/Component/ActivityComponent/activity_per_day_revision.dart';
 import 'package:mayfai_app/Component/ActivityComponent/activity_title_screen.dart';
 import 'package:mayfai_app/app_bar.dart';
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mayfai_app/Component/Page%20Transition/slide_transition.dart';
 import 'package:mayfai_app/Screens/Activity%20Screen/activity_screen.dart';
-import 'package:mayfai_app/Screens/Wallet%20Screen/wallet_screen.dart';
+import 'package:mayfai_app/Screens/Wallet%20Screen/wallet_screen_revision.dart';
 import 'package:mayfai_app/app_bar.dart';
 
 class AccountContainer extends StatelessWidget {
@@ -31,77 +31,89 @@ class AccountContainer extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            "Account",
-            style: GoogleFonts.montserrat(
-                textStyle: const TextStyle(
-                    fontSize: 14,
-                    color: Colors.black,
-                    fontWeight: FontWeight.w400)),
-          ),
-          ListTile(
-            title: Text(
-              "Kelola Akun",
+          Flexible(
+            child: Text(
+              "Account",
               style: GoogleFonts.montserrat(
                   textStyle: const TextStyle(
                       fontSize: 14,
                       color: Colors.black,
-                      fontWeight: FontWeight.w300)),
+                      fontWeight: FontWeight.w400)),
+            ),
+          ),
+          Expanded(
+            child: ListTile(
+              title: Text(
+                "Kelola Akun",
+                style: GoogleFonts.montserrat(
+                    textStyle: const TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w300)),
+              ),
             ),
           ),
           Divider(
             height: bodyHeight * 0.01,
             color: const Color(0xFFB0B0B0),
           ),
-          ListTile(
-            onTap: () {
-              Navigator.push(
-                  context, SlideRightRoute(page: const WalletScreen()));
-            },
-            title: Text(
-              "Pemasukan dan Pengeluaran",
-              style: GoogleFonts.montserrat(
-                  textStyle: const TextStyle(
-                      fontSize: 14,
-                      color: Colors.black,
-                      fontWeight: FontWeight.w300)),
+          Expanded(
+            child: ListTile(
+              onTap: () {
+                Navigator.push(
+                    context, SlideRightRoute(page: const WalletScrenn()));
+              },
+              title: Text(
+                "Pemasukan dan Pengeluaran",
+                style: GoogleFonts.montserrat(
+                    textStyle: const TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w300)),
+              ),
             ),
           ),
           Divider(
             height: bodyHeight * 0.01,
             color: const Color(0xFFB0B0B0),
           ),
-          ListTile(
-            onTap: () {
-              Navigator.push(
-                  context, SlideRightRoute(page: const ActivityScreen()));
-            },
-            title: Text(
-              "List Kegiatan",
-              style: GoogleFonts.montserrat(
-                  textStyle: const TextStyle(
-                      fontSize: 14,
-                      color: Colors.black,
-                      fontWeight: FontWeight.w300)),
+          Expanded(
+            child: ListTile(
+              onTap: () {
+                Navigator.push(
+                    context, SlideRightRoute(page: const ActivityScreen()));
+              },
+              title: Text(
+                "List Kegiatan",
+                style: GoogleFonts.montserrat(
+                    textStyle: const TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w300)),
+              ),
             ),
           ),
           Divider(
             height: bodyHeight * 0.01,
             color: const Color(0xFFB0B0B0),
           ),
-          ListTile(
-            title: Text(
-              "Save For",
-              style: GoogleFonts.montserrat(
-                  textStyle: const TextStyle(
-                      fontSize: 14,
-                      color: Colors.black,
-                      fontWeight: FontWeight.w300)),
+          Flexible(
+            child: ListTile(
+              title: Text(
+                "Save For",
+                style: GoogleFonts.montserrat(
+                    textStyle: const TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w300)),
+              ),
             ),
           ),
-          Divider(
-            height: bodyHeight * 0.01,
-            color: const Color(0xFFB0B0B0),
+          Flexible(
+            child: Divider(
+              height: bodyHeight * 0.01,
+              color: const Color(0xFFB0B0B0),
+            ),
           ),
         ],
       ),

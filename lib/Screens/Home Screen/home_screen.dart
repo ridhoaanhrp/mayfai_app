@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mayfai_app/Component/HomeComponent/activity.dart';
-import 'package:mayfai_app/Component/HomeComponent/discover.dart';
-import 'package:mayfai_app/Component/HomeComponent/finance.dart';
+import 'package:mayfai_app/Component/HomeComponent/activity_revision.dart';
+import 'package:mayfai_app/Component/HomeComponent/discover_revision.dart';
+import 'package:mayfai_app/Component/HomeComponent/finance_revision.dart';
 import 'package:mayfai_app/app_bar.dart';
 
 class HomeScreen extends StatefulWidget {

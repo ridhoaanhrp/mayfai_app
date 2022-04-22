@@ -1,18 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mayfai_app/Component/HomeComponent/finance.dart';
+import 'package:mayfai_app/Component/WalletComponent/finance_information_revision.dart';
 import 'package:mayfai_app/Component/WalletComponent/financial_records.dart';
 import 'package:mayfai_app/Component/WalletComponent/wallet_title_screen.dart';
 import 'package:mayfai_app/app_bar.dart';
 
-class WalletScreen extends StatefulWidget {
-  const WalletScreen({Key? key}) : super(key: key);
-
-  @override
-  _WalletScreenState createState() => _WalletScreenState();
-}
-
-class _WalletScreenState extends State<WalletScreen> {
-  int selectedIndex = 0;
+class WalletScrenn extends StatelessWidget {
+  const WalletScrenn({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +26,7 @@ class _WalletScreenState extends State<WalletScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
                   WalletTitleScreen(),
-                  FinanceInformation(),
+                  FinanceInformationDetail(),
                   FinancialRecords()
                 ],
               ),

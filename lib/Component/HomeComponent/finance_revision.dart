@@ -5,20 +5,16 @@ import 'package:iconify_flutter/icons/carbon.dart';
 import 'package:mayfai_app/app_bar.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
-class FinanceInformation extends StatefulWidget {
+class FinanceInformation extends StatelessWidget {
   const FinanceInformation({Key? key}) : super(key: key);
 
   @override
-  _FinanceInformationState createState() => _FinanceInformationState();
-}
-
-class _FinanceInformationState extends State<FinanceInformation> {
-  List<ChartData> chartData = [
-    ChartData(nameUser: "Danny", percent: 50, color: const Color(0xFF20A0FD)),
-    ChartData(nameUser: "Danny", percent: 50, color: const Color(0xFFFFFFFF))
-  ];
-  @override
   Widget build(BuildContext context) {
+    List<ChartData> chartData = [
+      ChartData(nameUser: "Danny", percent: 50, color: const Color(0xFF20A0FD)),
+      ChartData(nameUser: "Danny", percent: 50, color: const Color(0xFFFFFFFF))
+    ];
+
     double bodyHeight = MediaQuery.of(context).size.height -
         const MayfaiAppBar().preferredSize.height -
         MediaQuery.of(context).padding.top;

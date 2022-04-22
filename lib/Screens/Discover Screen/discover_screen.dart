@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mayfai_app/Component/DiscoverComponent/news_of_today.dart';
-import 'package:mayfai_app/Component/DiscoverComponent/popular_news.dart';
+import 'package:mayfai_app/Component/DiscoverComponent/popular_news_revision.dart';
 import 'package:mayfai_app/Component/DiscoverComponent/search_box_and_tab_bar.dart';
 import 'package:mayfai_app/Component/DiscoverComponent/title_screen.dart';
 import 'package:mayfai_app/app_bar.dart';

@@ -3,14 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:mayfai_app/Model/discover_model.dart';
 import 'package:mayfai_app/app_bar.dart';
 
-class TabBarViewPopular extends StatefulWidget {
-  const TabBarViewPopular({Key? key}) : super(key: key);
+class TabBarViewFinancial extends StatelessWidget {
+  const TabBarViewFinancial({Key? key}) : super(key: key);
 
-  @override
-  _TabBarViewPopularState createState() => _TabBarViewPopularState();
-}
-
-class _TabBarViewPopularState extends State<TabBarViewPopular> {
   @override
   Widget build(BuildContext context) {
     double bodyHeight = MediaQuery.of(context).size.height -
@@ -19,9 +14,9 @@ class _TabBarViewPopularState extends State<TabBarViewPopular> {
     double bodyWidth = MediaQuery.of(context).size.width;
 
     return ListView.builder(
-        itemCount: discoverList.length,
+        itemCount: financialDiscoverList.length,
         itemBuilder: ((context, index) {
-          final DiscoverModel discoverModel = discoverList[index];
+          final DiscoverModel discoverModel = financialDiscoverList[index];
           return InkWell(
             onTap: () {},
             child: Card(

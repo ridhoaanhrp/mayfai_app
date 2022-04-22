@@ -3,14 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:mayfai_app/Model/discover_model.dart';
 import 'package:mayfai_app/app_bar.dart';
 
-class PopularNews extends StatefulWidget {
+class PopularNews extends StatelessWidget {
   const PopularNews({Key? key}) : super(key: key);
 
-  @override
-  _PopularNewsState createState() => _PopularNewsState();
-}
-
-class _PopularNewsState extends State<PopularNews> {
   @override
   Widget build(BuildContext context) {
     double bodyHeight = MediaQuery.of(context).size.height -

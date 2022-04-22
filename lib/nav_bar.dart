@@ -10,7 +10,7 @@ import 'package:mayfai_app/Screens/Activity%20Screen/activity_screen.dart';
 import 'package:mayfai_app/Screens/Discover%20Screen/discover_screen.dart';
 import 'package:mayfai_app/Screens/Home%20Screen/home_screen.dart';
 import 'package:mayfai_app/Screens/Profile%20Screen/profile_screen.dart';
-import 'package:mayfai_app/Screens/Wallet%20Screen/wallet_screen.dart';
+import 'package:mayfai_app/Screens/Wallet%20Screen/wallet_screen_revision.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({Key? key}) : super(key: key);
@@ -39,7 +39,7 @@ class _MainHomeState extends State<NavBar> {
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             Navigator.push(
-                context, SlideRightRoute(page: const WalletScreen()));
+                context, SlideRightRoute(page: const WalletScrenn()));
           },
           backgroundColor: Colors.white,
           child: const Iconify(

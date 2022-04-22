@@ -3,14 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:mayfai_app/Model/discover_model.dart';
 import 'package:mayfai_app/app_bar.dart';
 
-class TabBarViewEconomy extends StatefulWidget {
-  const TabBarViewEconomy({Key? key}) : super(key: key);
+class TabBarViewPopular extends StatelessWidget {
+  const TabBarViewPopular({Key? key}) : super(key: key);
 
-  @override
-  _TabBarViewEconomyState createState() => _TabBarViewEconomyState();
-}
-
-class _TabBarViewEconomyState extends State<TabBarViewEconomy> {
   @override
   Widget build(BuildContext context) {
     double bodyHeight = MediaQuery.of(context).size.height -
@@ -19,9 +14,9 @@ class _TabBarViewEconomyState extends State<TabBarViewEconomy> {
     double bodyWidth = MediaQuery.of(context).size.width;
 
     return ListView.builder(
-        itemCount: economyDiscoverList.length,
+        itemCount: discoverList.length,
         itemBuilder: ((context, index) {
-          final DiscoverModel discoverModel = economyDiscoverList[index];
+          final DiscoverModel discoverModel = discoverList[index];
           return InkWell(
             onTap: () {},
             child: Card(

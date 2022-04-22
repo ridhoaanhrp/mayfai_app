@@ -2,24 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/carbon.dart';
-import 'package:mayfai_app/Component/HomeComponent/finance.dart';
+import 'package:mayfai_app/Component/HomeComponent/finance_revision.dart';
 import 'package:mayfai_app/app_bar.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
-class FinanceInformation extends StatefulWidget {
-  const FinanceInformation({Key? key}) : super(key: key);
+class FinanceInformationDetail extends StatelessWidget {
+  const FinanceInformationDetail({Key? key}) : super(key: key);
 
-  @override
-  _FinanceInformationState createState() => _FinanceInformationState();
-}
-
-class _FinanceInformationState extends State<FinanceInformation> {
-  List<ChartData> chartData = [
-    ChartData(nameUser: "Danny", percent: 50, color: const Color(0xFF20A0FD)),
-    ChartData(nameUser: "Danny", percent: 50, color: const Color(0xFFFFFFFF))
-  ];
   @override
   Widget build(BuildContext context) {
+    List<ChartData> chartData = [
+      ChartData(nameUser: "Danny", percent: 50, color: const Color(0xFF20A0FD)),
+      ChartData(nameUser: "Danny", percent: 50, color: const Color(0xFFFFFFFF))
+    ];
+
     double bodyHeight = MediaQuery.of(context).size.height -
         const MayfaiAppBar().preferredSize.height -
         MediaQuery.of(context).padding.top;

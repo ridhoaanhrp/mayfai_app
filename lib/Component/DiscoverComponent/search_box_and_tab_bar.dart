@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/bx.dart';
-import 'package:mayfai_app/Component/DiscoverComponent/TabBarView/tab_bar_view_economy.dart';
-import 'package:mayfai_app/Component/DiscoverComponent/TabBarView/tab_bar_view_financial.dart';
-import 'package:mayfai_app/Component/DiscoverComponent/TabBarView/tab_bar_view_popular.dart';
+import 'package:mayfai_app/Component/DiscoverComponent/TabBarView/tab_bar_view_economy_revision.dart';
+import 'package:mayfai_app/Component/DiscoverComponent/TabBarView/tab_bar_view_financial_revision.dart';
+import 'package:mayfai_app/Component/DiscoverComponent/TabBarView/tab_bar_view_popular_revision.dart';
 import 'package:mayfai_app/app_bar.dart';
 
 class OtherNews extends StatefulWidget {

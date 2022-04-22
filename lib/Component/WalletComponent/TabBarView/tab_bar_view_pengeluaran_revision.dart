@@ -5,14 +5,9 @@ import 'package:iconify_flutter/icons/akar_icons.dart';
 import 'package:mayfai_app/Model/wallet_model.dart';
 import 'package:mayfai_app/app_bar.dart';
 
-class TabBarPengeluaran extends StatefulWidget {
-  const TabBarPengeluaran({Key? key}) : super(key: key);
+class TabBarViewPengeluaran extends StatelessWidget {
+  const TabBarViewPengeluaran({Key? key}) : super(key: key);
 
-  @override
-  _TabBarPengeluaranState createState() => _TabBarPengeluaranState();
-}
-
-class _TabBarPengeluaranState extends State<TabBarPengeluaran> {
   @override
   Widget build(BuildContext context) {
     double bodyHeight = MediaQuery.of(context).size.height -

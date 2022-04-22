@@ -3,14 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:mayfai_app/Model/discover_model.dart';
 import 'package:mayfai_app/app_bar.dart';
 
-class DiscoverList extends StatefulWidget {
+class DiscoverList extends StatelessWidget {
   const DiscoverList({Key? key}) : super(key: key);
 
-  @override
-  _DiscoverListState createState() => _DiscoverListState();
-}
-
-class _DiscoverListState extends State<DiscoverList> {
   @override
   Widget build(BuildContext context) {
     double bodyHeight = MediaQuery.of(context).size.height -

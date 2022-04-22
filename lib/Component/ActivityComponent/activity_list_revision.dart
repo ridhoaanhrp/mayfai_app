@@ -3,14 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:mayfai_app/Model/activity_model.dart';
 import 'package:mayfai_app/app_bar.dart';
 
-class ActivityList extends StatefulWidget {
+class ActivityList extends StatelessWidget {
   const ActivityList({Key? key}) : super(key: key);
 
-  @override
-  _ActivityListState createState() => _ActivityListState();
-}
-
-class _ActivityListState extends State<ActivityList> {
   @override
   Widget build(BuildContext context) {
     double bodyHeight = MediaQuery.of(context).size.height -

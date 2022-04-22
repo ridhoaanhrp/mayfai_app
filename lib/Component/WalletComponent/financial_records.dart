@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mayfai_app/Component/WalletComponent/TabBarView/tab_bar_view_pemasukan.dart';
-import 'package:mayfai_app/Component/WalletComponent/TabBarView/tab_bar_view_pengeluaran.dart';
+import 'package:mayfai_app/Component/WalletComponent/TabBarView/tab_bar_view_pemasukan_revision.dart';
+import 'package:mayfai_app/Component/WalletComponent/TabBarView/tab_bar_view_pengeluaran_revision.dart';
 import 'package:mayfai_app/app_bar.dart';
 
 class FinancialRecords extends StatefulWidget {
@@ -97,8 +97,8 @@ class _FinancialRecordsState extends State<FinancialRecords>
                         height: bodyHeight * 0.4,
                         child: const TabBarView(
                           children: [
-                            TabBarPemasukan(),
-                            TabBarPengeluaran(),
+                            TabBarViewPemasukan(),
+                            TabBarViewPengeluaran()
                           ],
                         ),
                       ),

@@ -5,14 +5,9 @@ import 'package:iconify_flutter/icons/bi.dart';
 import 'package:mayfai_app/Model/activity_model.dart';
 import 'package:mayfai_app/app_bar.dart';
 
-class ActivityPerDay extends StatefulWidget {
+class ActivityPerDay extends StatelessWidget {
   const ActivityPerDay({Key? key}) : super(key: key);
 
-  @override
-  _ActivityPerDayState createState() => _ActivityPerDayState();
-}
-
-class _ActivityPerDayState extends State<ActivityPerDay> {
   @override
   Widget build(BuildContext context) {
     double bodyHeight = MediaQuery.of(context).size.height -
